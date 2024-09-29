@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+    --text-color: #000000b2;
+    --body: #E6E6FA;
+    --hover: #e8919d;
+    --inicio-fim: #ffcccc;
+    --color-00: #ff859f;
+    --color-01: #ffff;
+    --color-02: #e8919d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth; 
+}
+
+body {
+    background-color: var(--body);
+    color: var(--text-color);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: var(--color-00);
+    padding: 6px;
+    width: 350px;
+    height: 414px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0px;
+    box-shadow: 0 0 10px 0 var(--color-00);
+}
+
+.buttonsForm {
+    margin-top: 40px;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0 0 7px 0 var(--inicio-fim);
+}
+
+.buttonsForm button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    position: relative;
+    padding: 10px 29px;
+    font-size: 16px; /* Tamanho da fonte dos botões */
+}
+
+.btnColor {
+    position: absolute;
+    width: 108px;
+    height: 100%;
+    background: linear-gradient(var(--inicio-fim), var(--inicio-fim));
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.form .label {
+    display: block;
+    color: var(--text-color);
+    margin-bottom: 6px;
+}
+
+.input {
+    padding: 13px 0 13px 25px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    outline: none;
+    font-size: 17px;
+    color: var(--text-color);
+    background-color: var(--inicio-fim);
+    border: var(--text-color);
+    transition: border 0.3s; /* Transição suave para a borda */
+}
+
+.input:focus {
+    border-color: var(--inicio-fim); /* Cor da borda ao focar */
+}
+
+.card-grp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-item {
+    width: 48%;
+}
+
+.space {
+    margin-bottom: 20px;
+}
+
+.icon-relative {
+    position: relative;
+}
+
+.icon-relative .fas,
+.icon-relative .far {
+    position: absolute;
+    bottom: 12px;
+    left: 15px;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn button {
+    background-color: var(--inicio-fim); /* Cor do botão */
+    color: var(--text-color); /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Remove bordas padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+}
+
+@media screen and (max-width: 60px) {
+    .card-grp {
+        flex-direction: column;
+    }
+    .card-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .btn {
+        margin-top: 20px;
+    }
+}

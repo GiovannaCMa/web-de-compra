@@ -1,0 +1,99 @@
+:root {
+    --text-color: #000000b2;
+    --body: #E6E6FA;
+    --hover: #e8919d;
+    --inicio-fim: #ffcccc;
+    --color-00: #ff859f;
+    --color-01: #ffff;
+    --color-02: #e8919d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth; 
+}
+
+body {
+    background-color: var(--body);
+    color: var(--text-color);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--color-00);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Formulário de Entrega */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Esconde o resumo do pedido inicialmente */
+#order-summary {
+    display: none;
+}
+
+/* Exibe o formulário de entrega por padrão */
+#shipping-form {
+    display: block;
+}
+
+/* Botão de Envio */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--inicio-fim);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: var(--hover);
+}
+
+
+
+/* Estilos adicionais */
+.total {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+h2, p {
+    margin: 20px;
+}

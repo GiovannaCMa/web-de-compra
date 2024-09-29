@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento PIX</title>
+    <link rel="stylesheet" href="../css/pix.css"> <!-- Link para o CSS separado -->
+  </head>
+  <body>
+    <section class="pix-section">
+      <h2>Pague com PIX</h2>
+      <div>
+        <!-- Exibe a chave PIX -->
+        <h4>Chave PIX:</h4>
+        <span id="pix-key">chavepix@exemplo.com</span>
+        <br/>
+        <button onclick="copyPixKey()">Copiar Chave PIX</button>
+        <p class="copied-message" id="copied-message" style="display:none;">Chave PIX copiada!</p>
+        <br/>
+        <!-- Exibe o QR Code do PIX -->
+        <h4>Ou escaneie o QR Code</h4>
+        <img src="../img/qrcode.png" alt="QR Code PIX" id="pix-qr">
+      </div>
+      <a href="comprafeita.html">
+        <button>tudo ok</button>
+      </a>
+
+    </section>
+
+    <script src="../js/pix.js"></script> <!-- Link para o JS separado -->
+  </body>
+</html>

@@ -1,0 +1,78 @@
+:root {
+    --text-color: #000000b2;
+    --body: #E6E6FA;
+    --hover: #e8919d;
+    --inicio-fim: #ffcccc;
+    --color-00: #ff859f;
+    --color-01: #ffff;
+    --color-02: #e8919d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth; 
+}
+
+body {
+    background-color: var(--body);
+    color: var(--text-color);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.pix-section {
+    background-color: var(--color-00);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+  
+h2 {
+    color: #333;
+}
+  
+#pix-key {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+  
+button {
+    background-color: var(--inicio-fim);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+  
+  button:hover {
+    background-color: var(--hover);
+  }
+  
+img {
+    margin-top: 15px;
+    width: 200px;
+    height: 200px;
+}
+  
+.copied-message {
+    color: green;
+    margin-top: 10px;
+    font-size: 14px;
+}
+  

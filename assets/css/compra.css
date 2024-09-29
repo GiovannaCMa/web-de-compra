@@ -1,0 +1,224 @@
+/*Google fonts import*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --text-color: #000000b2;
+    --body: #E6E6FA;
+    --hover: #e8919d;
+    --inicio-fim: #ffcccc;
+    --color-00: #ff859f;
+    --color-01: #ffff;
+    --color-02: #e8919d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--body);
+    color: var(--text-color);
+    margin: 0; 
+    padding-top: 4rem; 
+}
+
+section {
+    min-height: 4vw;
+    padding: 3rem 3rem 1rem;
+    border: solid 0px var(--color-01);
+}
+
+h2, h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Container geral dos livros */
+.books {
+    text-align: center;
+    padding: 20px;
+}
+  
+.books h2 {
+    font-size: 2rem;
+    color: var(--color-00);
+    margin-bottom: 30px;
+}
+  
+/* Container geral dos livros */
+.books-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+  
+.books-box {
+    background-color: var(--color-00);
+    border-radius: 10px;
+    padding: 20px;
+    width: 600px; /* Ajustar a largura do item para caber imagem e texto lado a lado */
+    box-shadow: var(--color-00);
+    transition: transform 0.3s ease;
+}
+  
+.books-box:hover {
+    transform: scale(1.05);
+}
+  
+.book-content {
+    display: flex;
+    align-items: flex-start; /* Alinha a imagem e o texto no topo */
+}
+  
+.book-content img {
+    max-width: 150px; /* Define um tamanho máximo para a imagem */
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+    border-radius: 5px;
+}
+  
+.book-details {
+    text-align: left;
+    flex: 1; /* Faz o texto ocupar o espaço restante */
+}
+  
+.book-details h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    color: var(--text-color);
+}
+  
+.book-details p {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-top: 10px;
+}
+  
+.preco {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Estilização da seção de pagamento */
+.payment-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.payment-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.payment-option {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.payment-option button {
+    background-color: var(--color-00);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.payment-option button:hover {
+    transform: scale(1.1);
+    background-color: var(--inicio-fim);
+    color: var(--text-color);
+}
+
+
+
+  
+/* Estilização dos detalhes de pagamento */
+#paymentDetails {
+    margin-top: 20px;
+}
+  
+#paymentDetails ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+#paymentDetails ul li {
+    background-color: var(--inicio-fim);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 8px;
+}
+ 
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+  
+a:hover {
+    text-decoration: underline;
+}
+  
+/* Responsividade */ 
+  
+@media (max-width: 600px) {
+    /* Ajusta o conteúdo do livro */
+    .book-content {
+        flex-direction: column; /* Coloca imagem e texto em coluna */
+        align-items: center;
+    }
+
+    .book-content img {
+        max-width: 100px; /* Reduz a imagem para caber melhor */
+        margin-bottom: 10px;
+    }
+
+    .book-details h3 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .book-details p {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .preco {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    
+    #payment-options button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+}

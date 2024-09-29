@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login ou Cadastro</title>
+  <link rel="stylesheet" href="../css/cards.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+</head>
+<body>
+  <div class="container">
+    <div class="buttonsForm">
+      <div class="btnColor"></div>
+      <button id="btnSignin">Débito</button>
+      <button id="btnSignup">Crédito</button>
+    </div>
+
+    <form id="signin">
+      <div class="form">
+        <div class="card space icon-relative">
+          <label class="label">Nome:</label>
+          <input type="text" class="input" placeholder="" required>
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="card space icon-relative">
+          <label class="label">Número do Cartão:</label>
+          <input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="0000 0000 0000 0000" required>
+          <i class="far fa-credit-card"></i>
+        </div>
+        <div class="card-grp space">
+          <div class="card-item icon-relative">
+            <label class="label">Validade:</label>
+            <input type="text" name="expiry-date" class="input" data-mask="00 / 00" placeholder="00 / 00" required>
+            <i class="far fa-calendar-alt"></i>
+          </div>
+          <div class="card-item icon-relative">
+            <label class="label">CVC:</label>
+            <input type="text" class="input" data-mask="000" placeholder="000" required>
+            <i class="fas fa-lock"></i>
+          </div>
+        </div>
+        <div class="btn">
+          <button type="submit">Cadastrar</button>
+        </div>
+      </div>
+    </form>
+
+    <form id="signup">
+      <div class="form">
+        <div class="card space icon-relative">
+          <label class="label">Nome:</label>
+          <input type="text" class="input" placeholder="" required>
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="card space icon-relative">
+          <label class="label">Número do Cartão:</label>
+          <input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="0000 0000 0000 0000" required>
+          <i class="far fa-credit-card"></i>
+        </div>
+        <div class="card-grp space">
+          <div class="card-item icon-relative">
+            <label class="label">Validade:</label>
+            <input type="text" name="expiry-date" class="input" data-mask="00 / 00" placeholder="00 / 00" required>
+            <i class="far fa-calendar-alt"></i>
+          </div>
+          <div class="card-item icon-relative">
+            <label class="label">CVC:</label>
+            <input type="text" class="input" data-mask="000" placeholder="000" required>
+            <i class="fas fa-lock"></i>
+          </div>
+        </div>
+        <div class="btn">
+          <button type="submit">Cadastrar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+<script src="../js/cards.js"></script>
+</html>
